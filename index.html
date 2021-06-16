@@ -11,13 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap" rel="stylesheet">
 
-  <style>
-    .features-grid svg {
-      height: 65px;
-      width: 65px;
-      border-radius: 16px;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -46,15 +39,9 @@
       >
   </section>
 
-  <section class="images-container">
-    <!-- <img src="assets/mobile/image-keyboard.jpg" alt="The Typemaster keyboard."> -->
-    <!-- <img src="assets/mobile/image-phone-and-keyboard.jpg" alt="The Typemaster keyboard."> -->
-    <img src="assets/mobile/image-glass-and-keyboard.jpg" alt="The Typemaster keyboard.">
-  </section>
-
-
-    <section class="keybord-content">
-      <img 
+    <section class="keyboard-content">
+      <div class="image-container">
+        <img 
         src="assets/mobile/image-phone-and-keyboard.jpg" 
         alt="Typemaster keyboard and phone." 
         srcset="assets/mobile/image-phone-and-keyboard.jpg 258w,
@@ -67,7 +54,8 @@
         srcset="assets/mobile/image-glass-and-keyboard.jpg 440w,
                 assets/tablet/image-glass-and-keyboard.jpg 888w,
                 assets/desktop/image-glass-and-keyboard.jpg 887w"
-        sizes="(max-width: 800px) 220px, 445px, 445px">
+        sizes="(max-width: 600px) 220px, 445px, 445px">
+      </div>
       <h2>Mechanical wireless keyboard</h2>
       <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.</p>
     </section>
@@ -103,7 +91,7 @@
   </main>
 
   <footer>
-    <p>Typemaster 2021 | All Rights Reserved</p>
+    <p>Typemaster 2021 <span>| All Rights Reserved</span></p>
   </footer>
 </body>
 </html>

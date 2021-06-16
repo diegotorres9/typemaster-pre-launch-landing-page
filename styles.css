@@ -2,35 +2,36 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-  }
-  
-  *, *:before, *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-  }
-  
-  ol, ul {
+}
+
+ol, ul {
     list-style: none;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     height: auto;
-  }
+}
   /* CONTENT STYLING */
-  header {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-  }
-  header a {
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 23px;
+    margin: 23px 24px 0 24px;
+}
+header a {
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -42,50 +43,134 @@ html {
     color: #162542;
     padding: 11px 14.5px 18px 13.5px;
     border-radius: 8px;
+}
+.main-information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+}
+.main-information .keyboard-information {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 24px 64px 24px;
+}
+.keyboard-information h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #162542;
+    line-height: 56px;
+}
+.keyboard-information p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7B8BAD;
+    line-height: 26px;
+    margin-top: 22px;
+    margin-bottom: 32px;
+}
+.keyboard-information .preorder-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.preorder-date a {
+    width: 150px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #F16718;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 11px 14px 18px 14px;
+}
+.main-information img {
+    border-radius: 20px;
+    width: 372px;
+}
+.keyboard-content .image-container {
+    display: flex;
+    height: 193px;
+}
+.image-container img {
+    border-radius: 20px;
+}
+.keyboard-content h2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 36px;
+    color: #162542;
+    margin: 75px 60px 22px 60px;
+}
+.keyboard-content p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #7B8BAD;
+    line-height: 26px;
+    margin: 0 24px;
+}
+.features-grid {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+    align-content: center;
+    margin: 111px 0 96px 0;
+}
+.features-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.features-grid div h3 {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 900;
+    color: #162542;
+    margin-top: 48px;
+    margin-bottom: 23px;
+}
+.features-grid div p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #7B8BAD;
+    margin: 0 24px;
+}
+.features-grid div svg {
+    height: 65px;
+    width: 65px;
+    border-radius: 16px;
   }
-  .main-information {
-      display: flex;
-      flex-direction: column;
-  }
-  .main-information .keyboard-information {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-  .keyboard-information h1 {
-      font-family: 'Barlow', sans-serif;
-      font-size: 48px;
-      font-weight: 900;
-      text-transform: uppercase;
-      color: #162542;
-      line-height: 56px;
-  }
-  .keyboard-information p {
-      font-family: 'Barlow', sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      color: #7B8BAD;
-      line-height: 26px;
-  }
-  .keyboard-information .preorder-date {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-  }
-  .preorder-date a {
-      width: 150px;
-      height: 48px;
-      border-radius: 8px;
-      background-color: #F16718;
-      font-family: 'Barlow', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      color: #FFF;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 11px 14px 18px 14px;
-  }
-  .main-information img {
-      border-radius: 20px;
-      /* transform: translate(24px); */
-  }
+footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 57px;
+}
+footer p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+footer span {
+    font-weight: 500;
+}
